@@ -8,12 +8,12 @@
           </div>
           <span>Informativos</span>
         </div>
-        <div class="item">
+        <router-link :to="'/predictions'" class="item">
           <div class="icon">
             <i class="fas fa-chart-bar"></i>
           </div>
           <span>Previsões</span>
-        </div>
+        </router-link>
       </div>
 
       <div class="item-group">
@@ -62,19 +62,19 @@ nav {
 }
 
 .float-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  width: 50px;
-  height: 50px;
-  background-color: #453a94;
-  border-radius: 50%;
-  font-size: 24px;
-  margin: 0 20px 20px 0;
-  outline: none;
-  border: 0;
-  z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background-color: #453a94;
+    border-radius: 50%;
+    font-size: 24px;
+    margin: 0 20px 20px 0;
+    outline: none;
+    border: 0;
+    z-index: 10;
 }
 
 .float-menu {
@@ -109,6 +109,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .item .icon {
