@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from './pages/Home'
-import Prevision from './pages/Prevision'
+import PrevisionIndex from './pages/Predictions/Index'
+import PrevisionNew from './pages/Predictions/New'
 
 Vue.use(Router)
 
@@ -13,9 +14,14 @@ const routes = [
     component: Home
   },
   {
-    name: 'Prevision',
+    name: 'PrevisionIndex',
     path: '/predictions',
-    component: Prevision
+    component: PrevisionIndex
+  },
+  {
+    name: 'PrevisionNew',
+    path: '/prevision/new',
+    component: PrevisionNew
   }
 ]
 
